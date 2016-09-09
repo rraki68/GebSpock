@@ -1,7 +1,5 @@
 package Spec
 
-import Modules.HomeLaunchModule
-import Page.CreateSitepage
 import Page.Homepage
 import geb.spock.GebReportingSpec
 
@@ -15,18 +13,10 @@ class List_example extends GebReportingSpec {
         when: 'load home page'
         to Homepage
 
-        then: ' Homepage loaded'
-        at Homepage
+        then: 'Homepage loaded'
 
-        when: 'click on login'
-
-        homeLaunchModule.createWebsiteButton.click()
-
-
-
-        then:''
-        to CreateSitepage
-
-        println(createSiteListModule.Sitetype)
+        /*writing proper css selector is impt here to select specific value
+        make sure the css is pointing to the text value, not the parent element*/
+        println ( headerbarModule.headerlinks[4].text() )
     }
 }

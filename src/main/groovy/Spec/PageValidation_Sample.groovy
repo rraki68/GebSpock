@@ -1,15 +1,14 @@
 package Spec
 
-import Modules.HeaderModule
-import Modules.HomeLaunchModule
-import Page.CreateSitepage
+import Modules.CreateWebsiteContentModule
+import Page.CreateWebSitePage
 import Page.Homepage
 import geb.spock.GebReportingSpec
 
 /**
  * Created by rsuryanarayana on 8/12/2016.
  */
-class spec1 extends GebReportingSpec {
+class PageValidation_Sample extends GebReportingSpec {
 
   def 'load wordpress'() {
 
@@ -21,7 +20,7 @@ class spec1 extends GebReportingSpec {
 
       at Homepage
 
-      headerbarModule.headerlinks.displayed
+      headerbarModule.displayed
       headerbarModule.headerlogo.displayed
 
       homeLaunchModule.createWebsiteButton.displayed
@@ -42,9 +41,11 @@ class spec1 extends GebReportingSpec {
 
     then:''
 
-      at CreateSitepage
+      at CreateWebSitePage
 
-      createSiteTable.displayed
+    createWebsiteContentModule.displayed
+    createWebsiteContentModule.WebsiteabtText.displayed
+
 
   }
 }

@@ -10,10 +10,9 @@ class HomeLaunchModule extends Module{
    static content = {
 
     homeLaunchdiv { $('.home-launch-cta') }
-    //MainText  { $('div.home-launch-cta>h1').textContent }
     mainText { $('div.home-launch-cta') }
     createWebsiteButton { $('#top-create-website-button') }
-    seePlansButton { $('#top-see-plans-button') }
+    seePlansButton { $('#top-see-plans-button1') }
     createWebsiteButton2 { $('#plans-create-website-button') }
 
     }

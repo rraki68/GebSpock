@@ -9,7 +9,7 @@ class HeaderModule extends Module {
 
     static content = {
 
-        headerlinks { $('.wpcom-pages') }
+        headerlinks { $('.pages-menu li a') }
         headerlogo  { $('.wpcom-logo') }
         loginLink   { $('.login-link') }
 
