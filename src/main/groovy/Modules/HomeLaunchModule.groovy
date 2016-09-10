@@ -12,7 +12,7 @@ class HomeLaunchModule extends Module{
     homeLaunchdiv { $('.home-launch-cta') }
     mainText { $('div.home-launch-cta') }
     createWebsiteButton { $('#top-create-website-button') }
-    seePlansButton { $('#top-see-plans-button1') }
+    seePlansButton { $('#top-see-plans-button') }
     createWebsiteButton2 { $('#plans-create-website-button') }
 
     }

@@ -16,7 +16,8 @@ class UserHomepage extends Page {
         readerIcon { $('.masterbar__item.masterbar__reader.is-active') }
         userProfileIcon{$('.masterbar__item-content>img')}
         profileName{ $('.profile-gravatar__user-display-name') }
-        signOutButton{ $('.button.me-sidebar__signout-button.form-button')}
+        signOutButton{ $('.button.me-sidebar__signout-button.is-compact')}
+
 
     }
 }

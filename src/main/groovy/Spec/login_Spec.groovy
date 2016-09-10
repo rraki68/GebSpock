@@ -7,7 +7,7 @@ import geb.spock.GebReportingSpec
 /**
  * Created by Rakesh on 14-08-2016.
  */
-class loginspec extends GebReportingSpec{
+class login_Spec extends GebReportingSpec{
 
     def "login validation"() {
 
@@ -16,7 +16,7 @@ class loginspec extends GebReportingSpec{
 
         then:' Homepage loaded'
         at Homepage
-        headerbarModule.headerlinks.displayed
+        headerbarModule.headerlogo.displayed
         homeLaunchModule.seePlansButton.displayed
         homeLaunchFooterModule.discover.displayed
         plansModule.freeColumn.displayed

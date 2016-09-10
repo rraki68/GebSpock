@@ -9,7 +9,7 @@ class CreateWebsiteContentModule extends Module {
 
     static content = {
 
-        WebsiteabtText { $('.card.survey-step__question.is-compact>label') }
+        WebsiteabtText(wait: true) { $('.card.survey-step__question.is-compact>label') }
 
     }
 }

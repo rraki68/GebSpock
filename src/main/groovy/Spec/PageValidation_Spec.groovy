@@ -8,7 +8,7 @@ import geb.spock.GebReportingSpec
 /**
  * Created by rsuryanarayana on 8/12/2016.
  */
-class PageValidation_Sample extends GebReportingSpec {
+class PageValidation_Spec extends GebReportingSpec {
 
   def 'load wordpress'() {
 
